@@ -6,4 +6,7 @@
  */
 
 $data = include 'DbConfig.php';
-var_dump($data);
+
+function test2(){
+    echo 2;
+}
