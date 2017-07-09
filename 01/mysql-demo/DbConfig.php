@@ -5,40 +5,40 @@
  * Date: 2017/7/9 下午2:04
  */
 
-    define('USER_DB','user_db');
-    define('RANK_DB','rank_db');
+define('USER_DB','user_db');
+define('RANK_DB','rank_db');
 
 
 
-    $dbConfig = [];
+$dbConfig = [];
 
-    $dbConfig[USER_DB] = [
-        'write' => [
+$dbConfig[USER_DB] = [
+    'write' => [
+        'host'     => '',
+        'port'     => '',
+        'dbname'   => '',
+        'username' => '',
+        'password' => '',
+    ],
+    'read'  => [
+        [
             'host'     => '',
             'port'     => '',
             'dbname'   => '',
             'username' => '',
             'password' => '',
         ],
-        'read'  => [
-            [
-                'host'     => '',
-                'port'     => '',
-                'dbname'   => '',
-                'username' => '',
-                'password' => '',
-            ],
-            [
-                'host'     => '',
-                'port'     => '',
-                'dbname'   => '',
-                'username' => '',
-                'password' => '',
-            ],
+        [
+            'host'     => '',
+            'port'     => '',
+            'dbname'   => '',
+            'username' => '',
+            'password' => '',
         ],
-    ];
+    ],
+];
 
-    return $dbConfig;
+return $dbConfig;
 
 
 
