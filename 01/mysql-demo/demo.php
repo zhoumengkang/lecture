@@ -10,3 +10,7 @@ $data = include 'DbConfig.php';
 function test(){
     echo 1;
 }
+
+function test2(){
+    echo 2;
+}
