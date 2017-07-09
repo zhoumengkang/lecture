@@ -7,6 +7,6 @@
 
 $data = include 'DbConfig.php';
 
-function test2(){
-    echo 2;
+function test(){
+    echo 1;
 }
