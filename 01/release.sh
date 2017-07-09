@@ -84,9 +84,11 @@ function release()
         log '发布完成 :)'
     fi
 
-    for i in $MAIL_GROUP;do
-        echo -e "The project has been pushed to $2 servers.\n---------------------------------------\nLast commit:\n$logmsg\n---------------------------------------\n operate: $USER" |mail -s "on-line notification" $i
-    done
+    if [ $1 == "product" ]; then
+        for i in $MAIL_GROUP;do
+            echo -e "The project has been pushed to $2 servers.\n---------------------------------------\nLast commit:\n$logmsg\n---------------------------------------\n operate: $USER" |mail -s "on-line notification" $i
+        done
+    fi
 }
 
 if [ $# == 0 ] || [ $# == 1 ]; then
