@@ -14,3 +14,7 @@ function test(){
 function test2(){
     echo 2;
 }
+
+function test4(){
+    echo 4;
+}
